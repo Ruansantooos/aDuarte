@@ -28,8 +28,8 @@ const itemVariants = {
 } as const;
 
 const socialLinks = [
-  { href: "https://instagram.com/", icon: <InstagramLogoIcon weight="fill" size={20} />, label: "Instagram" },
-  { href: "https://t.me/", icon: <TelegramLogoIcon weight="fill" size={20} />, label: "Telegram" },
+  { href: "https://www.instagram.com/daily.aduarteee/", icon: <InstagramLogoIcon weight="fill" size={20} />, label: "Instagram" },
+  { href: "https://t.me/+kinnxwWdwQdlYmZh", icon: <TelegramLogoIcon weight="fill" size={20} />, label: "Telegram" },
   { href: "https://wa.me/", icon: <WhatsappLogoIcon weight="fill" size={20} />, label: "WhatsApp" },
 ];
 
@@ -107,7 +107,7 @@ export default function Home() {
         >
           <motion.div variants={itemVariants}>
             <LinkButton
-              href="https://t.me/"
+              href="https://t.me/+kinnxwWdwQdlYmZh"
               title="Grupo Free"
               subtitle="Entre no grupo gratuito"
               icon={<TelegramLogoIcon weight="fill" size={22} />}

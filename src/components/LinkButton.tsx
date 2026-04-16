@@ -63,6 +63,14 @@ export function LinkButton({ href, title, subtitle, icon, delay = 0, glow }: Lin
       onMouseLeave={handleMouseLeave}
       onTouchStart={() => setActive(true)}
       onTouchEnd={() => setTimeout(() => setActive(false), 400)}
+      onClick={() => {
+        if (typeof window !== "undefined" && (window as any).fbq) {
+          (window as any).fbq("trackCustom", "LinkClick", {
+            button_name: title,
+            url: href,
+          });
+        }
+      }}
       style={{ x: mouseXSpring, y: mouseYSpring, ...glowStyle }}
       className="relative flex items-center justify-between w-full p-4 rounded-[2rem] liquid-glass group decoration-transparent overflow-hidden"
     >

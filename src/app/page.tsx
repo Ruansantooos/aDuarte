@@ -128,7 +128,7 @@ export default function Home() {
           <motion.div variants={itemVariants}>
             <LinkButton
               href="https://privacy.com.br/profile/aduarte"
-              title="Privacy"
+              title="Conteúdo Exclusivo"
               subtitle="Todo o conteúdo sem censura"
               icon={<LockKeyIcon weight="fill" size={22} />}
               glow="#f97316"
